@@ -1,0 +1,236 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        /Library/FME/2023.0/fme /Users/gurveer.kaur/Personal/salesforce-1.fmw
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="1208.01 116"
+#!   DOC_TOP_LEFT="681.507 -633.006"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="23219"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="4f4f125d-2363-4580-b101-cccafe752278"
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2023.0.0.0 (20230119 - Build 23219 - macosx-x64)"
+#!   LAST_SAVE_DATE="2023-01-24T10:04:58"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="310"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="0 0"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbXX0="
+#! >
+#! <PARAMETER_INFO>
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="SalesforceConnector"
+#!   VERSION="1"
+#!   POSITION="1371.5137151371512 -562.00562005620054"
+#!   BOUNDING_RECT="1371.5137151371512 -562.00562005620054 518.00625000000002 71"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23219"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="salesforce_record_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="salesforce_record_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="salesforce_instance_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="ADV_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="API_VERSION" PARM_VALUE="Latest"/>
+#!     <XFORM_PARM PARM_NAME="CONNECTION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CONN_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INCLUDE_DELETED" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REQ_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SOQL" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SalesforceConnector"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="Creator"
+#!   VERSION="6"
+#!   POSITION="681.50681506815067 -517.00517005170047"
+#!   BOUNDING_RECT="681.50681506815067 -517.00517005170047 430 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23219"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 310
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)salesforce-1.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2023.0.0.0 (20230119 - Build 23219 - macosx-x64)"
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME salesforce-1
+MACRO FME_VIEWER_APP fmedatainspector
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF {$(Creator_XML)} CreationFactory    FACTORY_NAME { Creator_XML_Creator }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>) }
+FACTORY_DEF {$(Creator_CLASSIC)} CreationFactory    FACTORY_NAME { Creator_CLASSIC_Creator }    $(Creator_2D3D) { $(Creator_COORDS) }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Creator_Cloner }    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES { 1 }    COPY_NUMBER_ATTRIBUTE { "_creation_instance" }    OUTPUT { FEATURE_TYPE Creator_CREATED        fme_feature_type Creator         }
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED Brancher -1 4"   INPUT FEATURE_TYPE Creator_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { SalesforceConnector_CATCHER }    INPUT  FEATURE_TYPE Creator_CREATED    OUTPUT { FEATURE_TYPE SalesforceConnector_INITIATOR }    OUTPUT { FEATURE_TYPE SalesforceConnector_READY      @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)      __salesforceconnector_transformer_name "SalesforceConnector"      __salesforceconnector_connection ""      __salesforceconnector_soql ""      __salesforceconnector_include_deleted "NO"      __salesforceconnector_api_version "Latest" }
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { SalesforceConnector_CALLER }    INPUT { FEATURE_TYPE SalesforceConnector_READY }    PYTHON_NAMESPACE FMEOBJECTS    SYMBOL_NAME salesforceconnector.salesforceConnector.SalesforceConnectorTransformer    OUTPUT { PYOUTPUT FEATURE_TYPE SalesforceConnector_PROCESSED }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { SalesforceConnector_ROUTER }    INPUT { FEATURE_TYPE SalesforceConnector_PROCESSED }    TEST &fme_rejection_code == ""    OUTPUT { PASSED FEATURE_TYPE SalesforceConnector_OUTPUT       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___)        }    OUTPUT { FAILED FEATURE_TYPE SalesforceConnector_<REJECTED>       @RemoveAttributes(___fme_rejection_code___)        }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SalesforceConnector OUTPUT Transformer Output Nuker"   INPUT FEATURE_TYPE SalesforceConnector_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SalesforceConnector INITIATOR Transformer Output Nuker"   INPUT FEATURE_TYPE SalesforceConnector_INITIATOR
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SalesforceConnector_<Rejected> INPUT FEATURE_TYPE SalesforceConnector_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SalesforceConnector<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
