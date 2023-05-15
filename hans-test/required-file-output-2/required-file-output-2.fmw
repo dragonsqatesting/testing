@@ -1,0 +1,727 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" C:\Users\hpodzun\Downloads\required-file-output-2.fmw
+#          --DestDataset_TEXTLINE ""
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="1386.01 255.507"
+#!   DOC_TOP_LEFT="447.004 -959.009"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="23247"
+#!   FME_BULK_MODE_THRESHOLD=""
+#!   FME_DOCUMENT_GUID="cb424d81-1c5f-45fa-ac03-7442a1368754"
+#!   FME_DOCUMENT_PRIORGUID="e2eab49a-aaf5-4539-86f3-6d6b359c6deb,d2acc417-ca41-4628-8e74-48302a8785ba"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="windows-1252"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2023.0.0.0 (20230301 - Build 23247 - WIN64)"
+#!   LAST_SAVE_DATE="2023-05-05T11:54:29"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-1006.26 0"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="TEXTLINE"
+#!   DATASET="$(DestDataset_TEXTLINE)"
+#!   KEYWORD="TEXTLINE_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="60"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES="text_line"
+#!   WRITE_DEFS="false"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) text_line_eol char(10)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="false"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="20156"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="txt file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="text_line"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="text/plain"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Text file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Text file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="TEXTLINE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="text_line"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="5"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="1379.0147901479015 -703.50162001620015"
+#!   BOUNDING_RECT="1379.0147901479015 -703.50162001620015 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="TEXTLINE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="text_line_data" ATTR_TYPE="buffer" ATTR_HAS_PORT="false" ATTR_VALUE="$(DestDataset_TEXTLINE)"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmedatadownload"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="OUTPUT_WRITER"
+#!   VALUE="TEXTLINE_1"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! <SERVICE
+#!   NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="Samples"
+#! />
+#! <ITEM
+#!   NAME="none2textline.fmw"
+#! />
+#! <MODIFICATIONS>
+#! <MODIFICATION
+#!   UID=":DatasetMgr_TEXTLINE_1:DestDataset_TEXTLINE_1"
+#!   VALUE="$(DestDataset_TEXTLINE)"
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:DestDataset_TEXTLINE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SERVER_DEST_DIR"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_BACKUP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DASHBOARD"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DATA"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_ENGINE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_LOG"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_SYSTEM"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_TEMP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_TOPIC_MESSAGE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:DESTINATION_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:LOG_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:SOURCE_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! </MODIFICATIONS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="TEXTLINE_1"
+#!   OVERRIDE="-TEXTLINE_1_DATASET"
+#!   DATASET="TEXTLINE_1/"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlRleHQvQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0IiwiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiRGVzdERhdGFzZXRfVEVYVExJTkUiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBUZXh0IEZpbGU6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="DestDataset_TEXTLINE" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI FILENAME DestDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="Creator"
+#!   VERSION="5"
+#!   POSITION="447.00447004470044 -888.00888008880088"
+#!   BOUNDING_RECT="447.00447004470044 -888.00888008880088 430 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20156"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="3"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE DestDataset_TEXTLINE_1,TEXTLINE_OUT_FME_GROUP_NAMED1_TEXTLINE_1,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1,TEXTLINE_OUT_FME_GROUP_NAMED2_TEXTLINE_1,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1,TEXTLINE_OUT_ENCODING_TEXTLINE_1,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1,TEXTLINE_OUT_FME_GROUP_NAMED3_TEXTLINE_1,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1
+# ============================================================================
+DEFAULT_MACRO DestDataset_TEXTLINE 
+
+# ============================================================================
+INCLUDE [ if {{$(DestDataset_TEXTLINE$encode)} == {}} { puts_real {Parameter 'DestDataset_TEXTLINE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} TEXTLINE
+MULTI_WRITER_KEYWORD{0} TEXTLINE_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "TEXTLINE_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER TEXTLINE TEXTLINE_1
+# =====================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the TextLine files. The user input is stored in
+# a macro, which is then used to define the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_TEXTLINE_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER TEXTLINE TEXTLINE_1
+DEFAULT_MACRO DestDataset_TEXTLINE_1 $(DestDataset_TEXTLINE)
+GUI FILENAME DestDataset_TEXTLINE_1 Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:
+DEFAULT_MACRO TEXTLINE_OUT_FME_GROUP_NAMED1_TEXTLINE_1 
+GUI OPTIONAL DISCLOSUREGROUP TEXTLINE_OUT_FME_GROUP_NAMED1_TEXTLINE_1 TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1 Writer Parameters
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1 YES
+TEXTLINE_1_OVERWRITE_FILE "$(TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1 YES%NO Overwrite Existing File:
+DEFAULT_MACRO TEXTLINE_OUT_FME_GROUP_NAMED2_TEXTLINE_1 
+GUI OPTIONAL DISCLOSUREGROUP TEXTLINE_OUT_FME_GROUP_NAMED2_TEXTLINE_1 TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1%TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1%TEXTLINE_OUT_ENCODING_TEXTLINE_1%TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1 File Contents
+# =====================================================================
+# Set the type of encoding for the output file
+# =====================================================================
+# Set line termination character
+DEFAULT_MACRO TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1 System
+TEXTLINE_1_END_OF_LINE "$(TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1 System%Windows%Unix%Macintosh%Source%None Line Termination:
+# =====================================================================
+# Set whether to write the last line termination character
+DEFAULT_MACRO TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1 YES
+TEXTLINE_1_WRITE_LAST_EOL "$(TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1 YES%NO Write Last Line Terminator:
+DEFAULT_MACRO TEXTLINE_OUT_ENCODING_TEXTLINE_1 UTF-8
+TEXTLINE_1_ENCODING "$(TEXTLINE_OUT_ENCODING_TEXTLINE_1)"
+GUI STRING_OR_ENCODING TEXTLINE_OUT_ENCODING_TEXTLINE_1 fme-system%* Character Encoding:
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1 YES
+TEXTLINE_1_WRITE_UTF8_BOM "$(TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1 YES%NO Write UTF Byte Order Mark
+DEFAULT_MACRO TEXTLINE_OUT_FME_GROUP_NAMED3_TEXTLINE_1 
+GUI OPTIONAL DISCLOSUREGROUP TEXTLINE_OUT_FME_GROUP_NAMED3_TEXTLINE_1 TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1 FME Server Parameters
+# =====================================================================
+# Set the mime type. Note -- it is actually only used inside of workspaces
+# as a FORMAT_PARAMETER which even then is parsed only by the FME Server
+# Repository Manager
+DEFAULT_MACRO TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1 text/plain
+TEXTLINE_1_MIME_TYPE "$(TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1)"
+GUI STRING_OR_CHOICE TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1 application/json%application/octet-stream%application/xml%application/x-www-form-urlencoded%image/gif%image/jpeg%image/png%image/tiff%multipart/mixed%multipart/alternative%multipart/related%text/html%text/plain%text/xml MIME Type:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO TEXTLINE_OUT_DESTINATION_DATASETTYPE_VALIDATION_TEXTLINE_1 Yes
+TEXTLINE_1_DESTINATION_DATASETTYPE_VALIDATION "$(TEXTLINE_OUT_DESTINATION_DATASETTYPE_VALIDATION_TEXTLINE_1)"
+DEFAULT_MACRO TEXTLINE_OUT_COORDINATE_SYSTEM_GRANULARITY_TEXTLINE_1 FEATURE
+TEXTLINE_1_COORDINATE_SYSTEM_GRANULARITY "$(TEXTLINE_OUT_COORDINATE_SYSTEM_GRANULARITY_TEXTLINE_1)"
+# ============================================================================ 
+TEXTLINE_1_GENERATE_FME_BUILD_NUM 20156
+TEXTLINE_1_DATASET "$(DestDataset_TEXTLINE_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)required-file-output-2.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING windows-1252
+FME_BULK_MODE_THRESHOLD 
+LAST_SAVE_BUILD "FME 2023.0.0.0 (20230301 - Build 23247 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_TEXTLINE_1 TEXTLINE_1
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME required-file-output-2
+MACRO FME_VIEWER_APP fmedatainspector
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF {$(Creator_XML)} CreationFactory    FACTORY_NAME { Creator_XML_Creator }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>) }
+FACTORY_DEF {$(Creator_CLASSIC)} CreationFactory    FACTORY_NAME { Creator_CLASSIC_Creator }    $(Creator_2D3D) { $(Creator_COORDS) }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Creator_Cloner }    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES { 1 }    COPY_NUMBER_ATTRIBUTE { "_creation_instance" }    OUTPUT { FEATURE_TYPE Creator_CREATED        fme_feature_type Creator         }
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED Brancher -1 3"   INPUT FEATURE_TYPE Creator_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Creator_CREATED TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>EvaluateExpression<openparen>ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV<comma>text_line_data<comma>$(DestDataset_TEXTLINE$encode$encode)<comma><space>ATTR_SET<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
