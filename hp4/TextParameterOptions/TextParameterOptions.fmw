@@ -1,0 +1,239 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FMEForm-24182\fme.exe" C:\Users\hpodzun\Downloads\TextParameterOptions.fmw
+#          --PARAMETER ""
+#          --PARAMETER_2 ""
+#          --PARAMETER_3 ""
+#          --PARAMETER_4 ""
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="436 65"
+#!   DOC_TOP_LEFT="1224.01 -1238.01"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24182"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="d50ca7f7-12ec-4bbe-9554-bcc9e9d79005"
+#!   FME_DOCUMENT_PRIORGUID="c764e721-e53b-43ff-a289-a4722881202b"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.0.0 (20240226 - Build 24182 - WIN64)"
+#!   LAST_SAVE_DATE="2024-04-02T09:51:13"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="0 0"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI STRING PARAMETER Enter Text Data - Uniline"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT PARAMETER_2 FME_SYNTAX%FME%FME_NO_WHITESPACE%NO%FME_INCLUDEBROWSE%YES%FME_INLINE%NO%FME_SUPPORTSNUMERIC%NO Enter Text Data - Multiline (Line Edit w Button)"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT PARAMETER_3 FME_SYNTAX%FME%FME_NO_WHITESPACE%NO%FME_INCLUDEBROWSE%NO%FME_INLINE%NO%FME_SUPPORTSNUMERIC%NO Enter Text Data - Multiline (Line Edit Only)"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT PARAMETER_4 FME_SYNTAX%FME%FME_NO_WHITESPACE%NO%FME_INCLUDEBROWSE%NO%FME_INLINE%YES%FME_SUPPORTSNUMERIC%NO Enter Text Data - Multiline (Embedded Multiline Editor)"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiIiLCJuYW1lIjoiUEFSQU1FVEVSIiwicHJvbXB0IjoiRW50ZXIgVGV4dCBEYXRhIC0gVW5pbGluZSIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInNob3dQcm9tcHQiOnRydWUsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiIiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUEFSQU1FVEVSXzIiLCJwcm9tcHQiOiJFbnRlciBUZXh0IERhdGEgLSBNdWx0aWxpbmUgKExpbmUgRWRpdCB3IEJ1dHRvbikiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0FyaXRobWV0aWNFZGl0b3IiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6dHJ1ZSwic2hvd0lubGluZUVkaXRvciI6ZmFsc2UsInNob3dQcm9tcHQiOnRydWUsInRyaW1XaGl0ZXNwYWNlIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiIiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUEFSQU1FVEVSXzMiLCJwcm9tcHQiOiJFbnRlciBUZXh0IERhdGEgLSBNdWx0aWxpbmUgKExpbmUgRWRpdCBPbmx5KSIsInJlcXVpcmVkIjp0cnVlLCJzaG93QXJpdGhtZXRpY0VkaXRvciI6ZmFsc2UsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwic2hvd0lubGluZUVkaXRvciI6ZmFsc2UsInNob3dQcm9tcHQiOnRydWUsInRyaW1XaGl0ZXNwYWNlIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiIiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUEFSQU1FVEVSXzQiLCJwcm9tcHQiOiJFbnRlciBUZXh0IERhdGEgLSBNdWx0aWxpbmUgKEVtYmVkZGVkIE11bHRpbGluZSBFZGl0b3IpIiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJzaG93SW5saW5lRWRpdG9yIjp0cnVlLCJzaG93UHJvbXB0IjpmYWxzZSwidHJpbVdoaXRlc3BhY2UiOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifV19"
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="PARAMETER" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI STRING PARAMETER Enter Text Data - Uniline"
+#! />
+#!     <INFO NAME="PARAMETER_2" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI TEXT_EDIT PARAMETER_2 FME_SYNTAX%FME%FME_NO_WHITESPACE%NO%FME_INCLUDEBROWSE%YES%FME_INLINE%NO%FME_SUPPORTSNUMERIC%NO Enter Text Data - Multiline (Line Edit w Button)"
+#! />
+#!     <INFO NAME="PARAMETER_3" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI TEXT_EDIT PARAMETER_3 FME_SYNTAX%FME%FME_NO_WHITESPACE%NO%FME_INCLUDEBROWSE%NO%FME_INLINE%NO%FME_SUPPORTSNUMERIC%NO Enter Text Data - Multiline (Line Edit Only)"
+#! />
+#!     <INFO NAME="PARAMETER_4" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI TEXT_EDIT PARAMETER_4 FME_SYNTAX%FME%FME_NO_WHITESPACE%NO%FME_INCLUDEBROWSE%NO%FME_INLINE%YES%FME_SUPPORTSNUMERIC%NO Enter Text Data - Multiline (Embedded Multiline Editor)"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="Creator"
+#!   VERSION="6"
+#!   POSITION="1224.0122401224012 -1173.0117301173011"
+#!   BOUNDING_RECT="1224.0122401224012 -1173.0117301173011 436 65"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24528"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+# ============================================================================
+DEFAULT_MACRO PARAMETER 
+
+DEFAULT_MACRO PARAMETER_2 
+
+DEFAULT_MACRO PARAMETER_3 
+
+DEFAULT_MACRO PARAMETER_4 
+
+# ============================================================================
+INCLUDE [ if {{$(PARAMETER$encode)} == {}} { puts_real {Parameter 'PARAMETER' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(PARAMETER_2$encode)} == {}} { puts_real {Parameter 'PARAMETER_2' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(PARAMETER_3$encode)} == {}} { puts_real {Parameter 'PARAMETER_3' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(PARAMETER_4$encode)} == {}} { puts_real {Parameter 'PARAMETER_4' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)TextParameterOptions.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.0.0 (20240226 - Build 24182 - WIN64)"
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME TextParameterOptions
+MACRO FME_VIEWER_APP fmedatainspector
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF {$(Creator_XML)} CreationFactory    FACTORY_NAME { Creator_XML_Creator }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>) }
+FACTORY_DEF {$(Creator_CLASSIC)} CreationFactory    FACTORY_NAME { Creator_CLASSIC_Creator }    $(Creator_2D3D) { $(Creator_COORDS) }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Creator_Cloner }    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES { 1 }    COPY_NUMBER_ATTRIBUTE { "_creation_instance" }
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
